@@ -23,7 +23,7 @@ function startServer() {
 }
 
 function cssHandler() {
-    return src('src/scss/**/*.scss')
+    return src('src/scss/style.scss')
         .pipe(sourceMaps.init())
         .pipe(sass({ outputStyle: 'compressed' }))
         .pipe(autoprefixer({ overrideBrowserslist: ['last 10 versions'], grid: true }))
@@ -34,7 +34,7 @@ function cssHandler() {
 }
 
 function jsHandler() {
-    return src('src/js/**/*.js')
+    return src('src/js/script.js')
         .pipe(uglify())
         .pipe(rename({ suffix: '.min' }))
         .pipe(dest('app/js/'))
