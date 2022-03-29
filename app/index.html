@@ -11,29 +11,35 @@
             defer
         ></script>
         <script src="js/script.min.js" defer></script>
-        <title>myPortfolio</title>
+        <title>Веб-Портфолио</title>
     </head>
     <body>
         <header class="header">
             <div class="container">
                 <div class="header__body">
-                    <a class="header__logo" href="/">Miguel UI</a>
+                    <a class="header__logo" href="index.html">ТМ</a>
                     <span class="header__burger"></span>
                     <nav class="header__menu">
                         <ul class="header__list">
                             <li class="header__item">
-                                <a class="header__link" href="#">Inicio</a>
+                                <a class="header__link" href="index.html"
+                                    >Главная</a
+                                >
                             </li>
                             <li class="header__item">
-                                <a class="header__link" href="#"
-                                    >Acerca de mi
+                                <a class="header__link" href="about.html"
+                                    >Обо мне
                                 </a>
                             </li>
                             <li class="header__item">
-                                <a class="header__link" href="#">Proyectos</a>
+                                <a class="header__link" href="projects.html"
+                                    >Проекты</a
+                                >
                             </li>
                             <li class="header__item">
-                                <a class="header__link" href="#">Contáctame</a>
+                                <a class="header__link" href="contact.html"
+                                    >Связаться</a
+                                >
                             </li>
                         </ul>
                     </nav>
@@ -46,16 +52,22 @@
                 <div class="container">
                     <div class="greetings__body">
                         <h1 class="greetings__title">
-                            Soy <span>Miguel&nbsp;Ruz.</span><br />Diseñador UI
+                            Я <span>Тимуршин&nbsp;Максим.</span
+                            ><br />Веб-разработчик
                         </h1>
                         <p class="greetings__subtitle">
-                            Este es mi Portafolio web!
+                            И это мое Веб-Портфолио
                         </p>
                         <div class="greetings__inner">
-                            <a class="btn btn-link" href="#">Ver proyectos</a>
-                            <a class="btn btn-download" href="#"
+                            <a class="btn btn-link" href="projects.html"
+                                >Мои работы</a
+                            >
+                            <a
+                                class="btn btn-download"
+                                href="Резюме.docx"
+                                download
                                 ><i class="fa-solid fa-arrow-down-to-line"></i>
-                                Descargar CV</a
+                                Скачать резюме</a
                             >
                         </div>
                     </div>
@@ -67,28 +79,38 @@
                     <div class="about-card__body">
                         <img
                             class="about-card__photo"
-                            src="http://fakeimg.pl/400x400/"
+                            src="img/photo.jpg"
                             alt="My Photo"
                         />
                         <div class="about-card__inner">
-                            <h2 class="about-card__title">Acerca de mi</h2>
+                            <h2 class="about-card__title">Обо мне</h2>
                             <p class="about-card__text">
-                                Hola! mi nombre es Miguel y tengo gran afinidad
-                                hacía el trabajo colaborativo, me gusta crear
-                                diseños que inspiren e involucren a las
-                                personas. Como diseñador UI, considero que un
-                                buen producto no solo brinda una solución sino
-                                que permite crear una experiencia emocional en
-                                las personas que lo usan.
+                                Доброго времени суток! Меня зовут Максим, и у
+                                меня имеется огромный интерес к веб-разработке.
+                                Свой путь я начал с просмотра обучающих роликов
+                                на YouTube и чтения профессиональной литературы,
+                                выполнял задачи по программированию на сайте
+                                CodeWars и различных самоучителях. Заинтересован
+                                в создании сложных, интересных, и, главное,
+                                полезных сайтов. После самостоятельного изучения
+                                направления Front-end и Back-end, совмещая с
+                                потоянной занятостью, решил поступить в
+                                онлайн-университет GeekBrains по направлению
+                                "Веб-разработчик", чтобы сэкономить время на
+                                поиске информации, получить качественное
+                                профессиональное образование в интересной мне
+                                сфере и обрести четкий путь развития.
                             </p>
                             <p class="about-card__text">
-                                En mi proceso creativo utilizo herramientas como
-                                Figma, Adobe XD, Photoshop e Illustrator que me
-                                ayudan en el flujo de trabajo para la producción
-                                de interfaces de usuario.
+                                В своих работах я использую такие технологии
+                                как: PHP, JavaScript, MySQL, Git, Figma и т.д.
+                                Они помогают мне в рабочем процессе для создания
+                                веб-приложений различной сложности.
                             </p>
-                            <a class="about-card__btn btn btn-download" href="#"
-                                >Mas acerca de mi
+                            <a
+                                class="about-card__btn btn btn-download"
+                                href="about.html"
+                                >Подробнее обо мне
                                 <i class="fa-solid fa-arrow-right"></i
                             ></a>
                         </div>
@@ -99,7 +121,7 @@
             <section class="projects">
                 <div class="container">
                     <div class="projects__body">
-                        <h2 class="projects__main-title">Proyectos</h2>
+                        <h2 class="projects__main-title">Недавние проекты</h2>
                         <ul class="projects__list">
                             <li class="projects__item">
                                 <img
@@ -107,71 +129,26 @@
                                     src="http://fakeimg.pl/1155x534/"
                                     alt="Project Cover"
                                 />
-                                <a class="projects__link" href="#">
+                                <a
+                                    class="projects__link"
+                                    href="projects/web-portfolio.html"
+                                >
                                     <div class="projects__title-wrapper">
                                         <h3 class="projects__title">
-                                            Guía de estilos y maquetas
+                                            Веб-Портфолио
                                         </h3>
                                         <p class="projects__subtitle">
-                                            Web - Iglesia fuente de poder
-                                        </p>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="projects__item">
-                                <img
-                                    class="projects__cover"
-                                    src="http://fakeimg.pl/1155x534/"
-                                    alt="Project Cover"
-                                />
-                                <a class="projects__link" href="#">
-                                    <div class="projects__title-wrapper">
-                                        <h3 class="projects__title">
-                                            Guía de estilos y maquetas
-                                        </h3>
-                                        <p class="projects__subtitle">
-                                            Web - Iglesia fuente de poder
-                                        </p>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="projects__item">
-                                <img
-                                    class="projects__cover"
-                                    src="http://fakeimg.pl/1155x534/"
-                                    alt="Project Cover"
-                                />
-                                <a class="projects__link" href="#">
-                                    <div class="projects__title-wrapper">
-                                        <h3 class="projects__title">
-                                            Guía de estilos y maquetas
-                                        </h3>
-                                        <p class="projects__subtitle">
-                                            Web - Iglesia fuente de poder
-                                        </p>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="projects__item">
-                                <img
-                                    class="projects__cover"
-                                    src="http://fakeimg.pl/1155x534/"
-                                    alt="Project Cover"
-                                />
-                                <a class="projects__link" href="#">
-                                    <div class="projects__title-wrapper">
-                                        <h3 class="projects__title">
-                                            Guía de estilos y maquetas
-                                        </h3>
-                                        <p class="projects__subtitle">
-                                            Web - Iglesia fuente de poder
+                                            Простой сайт из нескольких страниц с
+                                            адаптивной версткой
                                         </p>
                                     </div>
                                 </a>
                             </li>
                         </ul>
-                        <a class="projects__btn btn btn-link" href="#"
-                            >Ver más en Behance
+                        <a
+                            class="projects__btn btn btn-link"
+                            href="projects.html"
+                            >Посмотреть все работы
                             <i class="fa-solid fa-arrow-right"></i
                         ></a>
                     </div>
@@ -182,49 +159,65 @@
         <footer class="footer">
             <div class="container">
                 <div class="footer__body">
-                    <h2 class="footer__logo">Miguel UI</h2>
+                    <h2 class="footer__logo">ТМ</h2>
                     <div class="footer__inner">
-                        <h3 class="footer__subtitle">Inicio</h3>
+                        <h3 class="footer__subtitle">Меню</h3>
                         <ul class="footer__list">
                             <li class="footer__item">
-                                <a class="footer__link" href="#"
-                                    >Acerca de mi</a
+                                <a class="footer__link" href="about.html"
+                                    >Обо мне</a
                                 >
                             </li>
                             <li class="footer__item">
-                                <a class="footer__link" href="#">Proyectos</a>
+                                <a class="footer__link" href="projects.html"
+                                    >Проекты</a
+                                >
                             </li>
                         </ul>
                     </div>
                     <div class="footer__inner">
-                        <h3 class="footer__subtitle">Contáctame</h3>
+                        <h3 class="footer__subtitle">Связаться</h3>
                         <ul class="footer__list">
                             <li class="footer__item">
-                                <a class="footer__link" href="#">Correo</a>
+                                <a
+                                    class="footer__link"
+                                    href="mailto:ojohnrock@gmail.com"
+                                    >Почта</a
+                                >
                             </li>
                             <li class="footer__item">
-                                <a class="footer__link" href="#">LinkedIn</a>
+                                <a class="footer__link" href="tel:+79502638177"
+                                    >Телефон</a
+                                >
                             </li>
                         </ul>
                     </div>
                     <div class="footer__inner">
-                        <h3 class="footer__subtitle">Social</h3>
+                        <h3 class="footer__subtitle">Соц.сети</h3>
                         <ul class="footer__social-list">
                             <li class="footer__item">
-                                <a class="footer__social-link" href="#">
+                                <a
+                                    class="footer__social-link"
+                                    href="https://vk.com/ojohnrock"
+                                    target="_blank"
+                                >
                                     <i class="fa-brands fa-vk"></i>
                                 </a>
                             </li>
                             <li class="footer__item">
-                                <a class="footer__social-link" href="#">
+                                <a
+                                    class="footer__social-link"
+                                    href="https://t.me/oJohnRock"
+                                    target="_blank"
+                                >
                                     <i class="fa-brands fa-telegram"></i>
                                 </a>
                             </li>
-                            <li class="footer__item">
-                                <a class="footer__social-link" href="#">
+                            <!-- <li class="footer__item">
+                                <a class="footer__social-link" href="#" target="_blank">
                                     <i class="fa-brands fa-whatsapp"></i>
                                 </a>
-                            </li>
+                            </li> -->
                         </ul>
                     </div>
                 </div>

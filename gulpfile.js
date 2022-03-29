@@ -19,6 +19,7 @@ function startServer() {
         server: { baseDir: "app/" },
         notify: true,
         online: true,
+        tunnel: 'test'
     });
 
     watch("app/**/*.html").on("change", browserSync.reload);
