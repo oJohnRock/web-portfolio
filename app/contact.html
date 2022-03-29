@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="css/style.min.css" />
+        <script
+            src="https://kit.fontawesome.com/8bf41903c3.js"
+            crossorigin="anonymous"
+            defer
+        ></script>
+        <script src="js/script.min.js" defer></script>
+        <title>myPortfolio</title>
+    </head>
+    <body>
+        <header class="header">
+            <div class="container">
+                <div class="header__body">
+                    <a class="header__logo" href="/">Miguel UI</a>
+                    <span class="header__burger"></span>
+                    <nav class="header__menu">
+                        <ul class="header__list">
+                            <li class="header__item">
+                                <a class="header__link" href="#">Inicio</a>
+                            </li>
+                            <li class="header__item">
+                                <a class="header__link" href="#"
+                                    >Acerca de mi
+                                </a>
+                            </li>
+                            <li class="header__item">
+                                <a class="header__link" href="#">Proyectos</a>
+                            </li>
+                            <li class="header__item">
+                                <a class="header__link" href="#">Contáctame</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+        <main class="main">
+            <section class="contact">
+                <div class="container">
+                    <div class="contact__body">
+                        <h1 class="contact__title">¡Hablemos!</h1>
+                        <p class="contact__subtitle">
+                            Si estás interesado en mi trabajo o tienes alguna
+                            inquietud, no dudes en escribirme!
+                        </p>
+
+                        <form
+                            class="contact__form"
+                            id="email_form"
+                            action="https://postmail.invotes.com/send"
+                            method="post"
+                        >
+                            <label class="contact__label">
+                                Tu nombre
+                                <input
+                                    class="contact__input"
+                                    type="text"
+                                    name="subject"
+                                    placeholder="Nombre"
+                                    autofocus
+                                />
+                            </label>
+                            <label class="contact__label">
+                                Tu E-mail
+                                <input
+                                    class="contact__input"
+                                    type="text"
+                                    name="reply_to"
+                                    placeholder="Your Email"
+                                />
+                            </label>
+                            <label class="contact__label">
+                                Tu mensaje
+                                <textarea
+                                    class="contact__input"
+                                    name="text"
+                                    placeholder="Hey..."
+                                    rows="5"
+                                ></textarea>
+                            </label>
+
+                            <input
+                                type="hidden"
+                                name="access_token"
+                                value="ynrpuwr29q5od1ai0qgzxd82"
+                            />
+                            <input
+                                type="hidden"
+                                name="success_url"
+                                value=".?message=Email+Successfully+Sent%21&isError=0"
+                            />
+                            <input
+                                type="hidden"
+                                name="error_url"
+                                value=".?message=Email+could+not+be+sent.&isError=1"
+                            />
+
+                            <input
+                                class="contact__btn btn btn-link"
+                                id="submit_form"
+                                type="submit"
+                                value="Enviar"
+                            />
+                            <a
+                                class="contact__postmail"
+                                href="https://postmail.invotes.com"
+                                target="_blank"
+                                >Powered by PostMail</a
+                            >
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__body">
+                    <h2 class="footer__logo">Miguel UI</h2>
+                    <div class="footer__inner">
+                        <h3 class="footer__subtitle">Inicio</h3>
+                        <ul class="footer__list">
+                            <li class="footer__item">
+                                <a class="footer__link" href="#"
+                                    >Acerca de mi</a
+                                >
+                            </li>
+                            <li class="footer__item">
+                                <a class="footer__link" href="#">Proyectos</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__inner">
+                        <h3 class="footer__subtitle">Contáctame</h3>
+                        <ul class="footer__list">
+                            <li class="footer__item">
+                                <a class="footer__link" href="#">Correo</a>
+                            </li>
+                            <li class="footer__item">
+                                <a class="footer__link" href="#">LinkedIn</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__inner">
+                        <h3 class="footer__subtitle">Social</h3>
+                        <ul class="footer__social-list">
+                            <li class="footer__item">
+                                <a class="footer__social-link" href="#">
+                                    <i class="fa-brands fa-vk"></i>
+                                </a>
+                            </li>
+                            <li class="footer__item">
+                                <a class="footer__social-link" href="#">
+                                    <i class="fa-brands fa-telegram"></i>
+                                </a>
+                            </li>
+                            <li class="footer__item">
+                                <a class="footer__social-link" href="#">
+                                    <i class="fa-brands fa-whatsapp"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer__copyrights">&#169; 2021 Miguel Ruz</div>
+            </div>
+        </footer>
+    </body>
+</html>

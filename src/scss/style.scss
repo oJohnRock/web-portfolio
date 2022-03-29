@@ -49,7 +49,9 @@ body {
     font-weight: 500;
     line-height: 16px;
     padding: 15px 20px;
+    border: none;
     border-radius: 5px;
+    cursor: pointer;
     transition: 0.2s;
 
     &:not(:last-child) {
@@ -753,5 +755,88 @@ body {
 .projects {
     &__main-page {
         padding-top: 30px;
+    }
+}
+
+/* Страница Contact */
+.contact {
+    padding: 65px 0 125px 0;
+
+    &__body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 60px;
+        line-height: 71px;
+        margin-bottom: 15px;
+    }
+
+    &__subtitle {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        margin-bottom: 45px;
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        width: 650px;
+        padding: 25px;
+        background-color: $fillColor;
+        border-radius: 8px;
+    }
+
+    &__label {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 28px;
+        margin-bottom: 25px;
+    }
+
+    &__input {
+        display: block;
+        width: 100%;
+        padding: 15px 20px;
+        color: $textColor;
+        background-color: $bgColor;
+        border: 1px solid $borderColor;
+        border-radius: 8px;
+    }
+
+    &__btn {
+        width: 100%;
+        text-align: center;
+    }
+
+    &__postmail {
+        padding: 15px 20px;
+        color: $textColor;
+        text-decoration: none;
+    }
+}
+@media screen and (max-width: 768px) {
+    .contact {
+        padding: 30px 0 65px 0;
+
+        &__title {
+            font-weight: 500;
+            font-size: 34px;
+            line-height: 40px;
+        }
+
+        &__subtitle {
+            font-size: 14px;
+            line-height: 24px;
+            margin-bottom: 25px;
+        }
+
+        &__form {
+            width: 100%;
+        }
     }
 }
