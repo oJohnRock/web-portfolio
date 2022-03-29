@@ -605,7 +605,7 @@ body {
         max-width: 450px;
         max-height: 450px;
         border-radius: 8px;
-        margin-right: 60px;
+        margin-right: 3%;
     }
 
     &__title {
@@ -686,7 +686,7 @@ body {
     }
 
     &__item {
-        max-width: 480px;
+        max-width: 32%;
         padding: 25px;
         background-color: $fillColor;
         border-radius: 8px;
@@ -710,6 +710,13 @@ body {
         font-weight: 400;
         font-size: 16px;
         line-height: 28px;
+    }
+}
+@media screen and (max-width: 1054px) {
+    .skills {
+        &__item {
+            max-width: 48%;
+        }
     }
 }
 @media screen and (max-width: 768px) {
@@ -739,5 +746,12 @@ body {
             font-size: 14px;
             line-height: 20px;
         }
+    }
+}
+
+/* Страница Projects */
+.projects {
+    &__main-page {
+        padding-top: 30px;
     }
 }
