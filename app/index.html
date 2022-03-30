@@ -11,13 +11,15 @@
             defer
         ></script>
         <script src="js/script.min.js" defer></script>
-        <title>Веб-Портфолио</title>
+        <title>Веб-Портфолио. МТ</title>
     </head>
     <body>
         <header class="header">
             <div class="container">
                 <div class="header__body">
-                    <a class="header__logo" href="index.html">ТМ</a>
+                    <a class="header__logo" href="index.html"
+                        >new Timurshin('Max')</a
+                    >
                     <span class="header__burger"></span>
                     <nav class="header__menu">
                         <ul class="header__list">
@@ -52,20 +54,16 @@
                 <div class="container">
                     <div class="greetings__body">
                         <h1 class="greetings__title">
-                            Я <span>Тимуршин&nbsp;Максим.</span
-                            ><br />Веб-разработчик
+                            Профессиональная<br />разработка сайтов
                         </h1>
                         <p class="greetings__subtitle">
-                            И это мое Веб-Портфолио
+                            Веб-разработчик - <span>Тимуршин Максим</span>
                         </p>
                         <div class="greetings__inner">
-                            <a class="btn btn-link" href="projects.html"
+                            <a class="btn btn-1" href="projects.html"
                                 >Мои работы</a
                             >
-                            <a
-                                class="btn btn-download"
-                                href="Резюме.docx"
-                                download
+                            <a class="btn btn-2" href="Резюме.docx" download
                                 ><i class="fa-solid fa-arrow-down-to-line"></i>
                                 Скачать резюме</a
                             >
@@ -90,12 +88,12 @@
                                 Свой путь я начал с просмотра обучающих роликов
                                 на YouTube и чтения профессиональной литературы,
                                 выполнял задачи по программированию на сайте
-                                CodeWars и различных самоучителях. Заинтересован
-                                в создании сложных, интересных, и, главное,
-                                полезных сайтов. После самостоятельного изучения
-                                направления Front-end и Back-end, совмещая с
-                                потоянной занятостью, решил поступить в
-                                онлайн-университет GeekBrains по направлению
+                                CodeWars и в различных самоучителях.
+                                Заинтересован в создании сложных, интересных, и,
+                                главное, полезных сайтов. После самостоятельного
+                                изучения направлений Front-end и Back-end,
+                                совмещая с потоянной занятостью, решил поступить
+                                в онлайн-университет GeekBrains по направлению
                                 "Веб-разработчик", чтобы сэкономить время на
                                 поиске информации, получить качественное
                                 профессиональное образование в интересной мне
@@ -108,7 +106,7 @@
                                 веб-приложений различной сложности.
                             </p>
                             <a
-                                class="about-card__btn btn btn-download"
+                                class="about-card__btn btn btn-2"
                                 href="about.html"
                                 >Подробнее обо мне
                                 <i class="fa-solid fa-arrow-right"></i
@@ -126,7 +124,7 @@
                             <li class="projects__item">
                                 <img
                                     class="projects__cover"
-                                    src="http://fakeimg.pl/1155x534/"
+                                    src="img/projects/web-portfolio/cover.jpg"
                                     alt="Project Cover"
                                 />
                                 <a
@@ -145,9 +143,7 @@
                                 </a>
                             </li>
                         </ul>
-                        <a
-                            class="projects__btn btn btn-link"
-                            href="projects.html"
+                        <a class="projects__btn btn btn-1" href="projects.html"
                             >Посмотреть все работы
                             <i class="fa-solid fa-arrow-right"></i
                         ></a>
@@ -159,7 +155,7 @@
         <footer class="footer">
             <div class="container">
                 <div class="footer__body">
-                    <h2 class="footer__logo">ТМ</h2>
+                    <h2 class="footer__logo">new Timurshin('Max')</h2>
                     <div class="footer__inner">
                         <h3 class="footer__subtitle">Меню</h3>
                         <ul class="footer__list">
@@ -181,12 +177,16 @@
                             <li class="footer__item">
                                 <a
                                     class="footer__link"
-                                    href="mailto:ojohnrock@gmail.com"
+                                    href="mailto:79789399169@yandex.ru"
+                                    target="_blank"
                                     >Почта</a
                                 >
                             </li>
                             <li class="footer__item">
-                                <a class="footer__link" href="tel:+79502638177"
+                                <a
+                                    class="footer__link"
+                                    href="tel:+79789399169"
+                                    target="_blank"
                                     >Телефон</a
                                 >
                             </li>
@@ -213,15 +213,21 @@
                                     <i class="fa-brands fa-telegram"></i>
                                 </a>
                             </li>
-                            <!-- <li class="footer__item">
-                                <a class="footer__social-link" href="#" target="_blank">
+                            <li class="footer__item">
+                                <a
+                                    class="footer__social-link"
+                                    href="https://wa.me/79789399169"
+                                    target="_blank"
+                                >
                                     <i class="fa-brands fa-whatsapp"></i>
                                 </a>
-                            </li> -->
+                            </li>
                         </ul>
                     </div>
                 </div>
-                <div class="footer__copyrights">&#169; 2021 Miguel Ruz</div>
+                <div class="footer__copyrights">
+                    &#169; <span class="footer__year"></span> ТМ
+                </div>
             </div>
         </footer>
     </body>

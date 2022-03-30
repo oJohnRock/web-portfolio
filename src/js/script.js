@@ -8,6 +8,10 @@ burger.addEventListener("click", () => {
     menu.classList.toggle("header__menu--active");
 });
 
+const year = document.querySelector(".footer__year");
+
+year.innerHTML = new Date().getFullYear();
+
 const submitButton = document.getElementById("submit_form");
 const form = document.getElementById("email_form");
 
